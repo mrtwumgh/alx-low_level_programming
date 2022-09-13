@@ -11,6 +11,8 @@ int main(void)
 {
 	long int a;
 	long int b;
+	long int c;
+	long int next;
 
 	a = 1;
 	b = 2;
