@@ -1,16 +1,18 @@
 #include "main.h"
 
 /**
-* main - entry point into code
+* print_alphabet_x10 - entry point into code
 * Description - Prints 10 times the alphabet
 *Return: Should return a 0 value
 *
 */
 
-int main(void)
+void print_alphabet_x10(void)
 {
 	int i;
 	char c;
+
+	i = 0;
 
 	while (i < 10)
 	{
@@ -20,8 +22,7 @@ int main(void)
 			_putchar(c);
 			c++;
 		}
-	_putchar('\n');
-	i++;
+		_putchar('\n');
+		i++;
 	}
-	return (0);
 }
