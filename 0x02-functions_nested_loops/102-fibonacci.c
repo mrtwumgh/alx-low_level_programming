@@ -13,7 +13,7 @@ int main(void)
 	long int b;
 
 	a = 1;
-	B = 2;
+	b = 2;
 	for (c = 1; c <= 50; ++c)
 	{
 		if (a != 20365011074)
