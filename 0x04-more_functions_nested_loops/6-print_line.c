@@ -1,0 +1,22 @@
+#include "main.h"
+
+/**
+  *print_line - draws a straight line
+  *@n: number of times to draw line
+  *Return: Void
+  *
+  */
+
+void print_line(int n);
+{
+	int i;
+
+	if (n > o)
+	{
+		for (i = 1; i <= n; i++)
+		{
+			_putchar('_');
+		}
+	}
+	_putchar('\n');
+}
