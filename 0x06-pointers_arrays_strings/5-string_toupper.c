@@ -6,7 +6,7 @@
   *Return: the resulting string
   */
 
-char 8string_toupper(char *s)
+char *string_toupper(char *s)
 {
 	int a;
 
