@@ -8,11 +8,10 @@
 
 char *cap_string(char *s)
 {
-	int x;
+	int x = 0;
 	int y;
 	char special[13] = {9, 10, 32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
 
-	x = 0;
 
 	while (*(s + x))
 	{
