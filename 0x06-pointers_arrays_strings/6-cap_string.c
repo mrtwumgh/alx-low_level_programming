@@ -15,7 +15,7 @@ char *cap_string(char *s)
 
 	while (*(s + x))
 	{
-		for (y = 0; y < 13, y++)
+		for (y = 0; y < 13; y++)
 		{
 			if (x == 0 && s[x] >= 97 && s[x] <= 122)
 				s[x] -= 32;
