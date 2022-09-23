@@ -24,7 +24,7 @@ char *rot13(char *s)
 			s[x] += 13;
 			break;
 		}
-		x++
+		x++;
 	}
 	return (s);
 }
