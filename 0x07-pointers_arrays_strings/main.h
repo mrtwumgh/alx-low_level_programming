@@ -6,5 +6,6 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
 unsigned int_strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
+char *_strstr(char *haystackm char *needle);
 
 #endif /* MAIN_H */
