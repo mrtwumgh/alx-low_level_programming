@@ -13,7 +13,7 @@ int pal_cmp(char *s, int i, int j);
 
 int is_palindrome(char *s)
 {
-	if (pal_cmp(s, 0 (_strlen_recursion(s) - 1)))
+	if (pal_cmp(s, 0, (_strlen_recursion(s) - 1)))
 		return (1);
 	else
 		return (0);
