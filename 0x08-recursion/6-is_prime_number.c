@@ -28,7 +28,7 @@ int prm_num(int n, int x)
 {
 	if (x == 1)
 		return (1);
-	if (n % x == 0 && x > o)
+	if (n % x == 0 && x > 0)
 		return (0);
 	return (prm_num(n, x - 1));
 }
