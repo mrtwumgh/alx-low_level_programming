@@ -47,8 +47,10 @@ int _strlen_recursion(char *s)
 
 int pal_cmp(char *s, int i, int j)
 {
-	if (pal_cmp(s, 0 (_strlen_recursion(s) - 1)))
+	if (s[i] != s[j])
+		return (0);
+	else if (i >= j)
 		return (1);
 	else
-		return (0);
+		return (pal_cmp(s, i + 1, j - 1));
 }
