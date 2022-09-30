@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 	{
 		if (!is_num(argv[i]))
 		{
-			printf("Error\n")
+			printf("Error\n");
 			return (1);
 		}
 		sum += atoi(argv[i]);
