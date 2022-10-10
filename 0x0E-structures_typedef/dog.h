@@ -18,6 +18,17 @@ struct dog
 	char *owner;
 };
 
+/**
+  * dog_t - typedef for struct dog
+  * @name: defined element name
+  * @age: defined element age
+  * @owner: defined element owner
+  *
+  * Description: typedef for the type dog
+  *
+  */
+typedef struct dog dog_t;
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
