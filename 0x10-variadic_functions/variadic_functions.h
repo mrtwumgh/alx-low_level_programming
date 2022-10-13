@@ -1,0 +1,13 @@
+#ifndef _VARIADIC_FUNCTIONS_
+#define _VARIADIC_FUNCTIONS_
+
+
+int sum_them_all(const unsigned int, ...);
+
+
+
+
+
+void print_all(const char * const format, ...);
+
+#endif /* _VARIADIC_FUNCTIONS_ */
