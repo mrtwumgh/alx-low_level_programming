@@ -1,19 +1,12 @@
-#include "lists.h"
+#include <stdio.h>
 /**
- * free_list - function that frees a list_t list.
- *
- * @head: parameter that point to the head of the
- * linked list
+ * myCleanupFun - function that prints somthing before
+ * the main function is executed.
  */
-void free_list(list_t *head)
-{
-	list_t *temp;
+void myCleanupFun(void) __attribute__ ((constructor));
 
-	while (head)
-	{
-		temp = head->next;
-		free(head->str);
-		free(head);
-		head = temp;
-	}
+void myCleanupFun(void)
+{
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
