@@ -25,7 +25,7 @@ void times_table(void)
 					_putchar(' ');
 				}
 			}
-			else
+			if (p >= 10)
 			{
 				_putchar((p / 10) + '0');
 				_putchar((p % 10) + '0');
@@ -38,4 +38,4 @@ void times_table(void)
 		}
 		_putchar('\n');
 	}
-}				
+}
