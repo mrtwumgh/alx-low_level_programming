@@ -18,6 +18,11 @@ void times_table(void)
 			if (p < 10)
 			{
 				_putchar(p + '0');
+				if (a == 5 || a == 6 || a == 7 || a == 8 || a == 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 				if (b != 9)
 				{
 					_putchar(',');
@@ -25,7 +30,7 @@ void times_table(void)
 					_putchar(' ');
 				}
 			}
-			if (p >= 10)
+			else
 			{
 				_putchar((p / 10) + '0');
 				_putchar((p % 10) + '0');
