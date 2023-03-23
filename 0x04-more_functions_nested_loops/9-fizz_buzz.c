@@ -14,19 +14,23 @@ int main(void)
 	{
 		if (x % 3 == 0 && x % 5 == 0)
 		{
-			printf("%s ", "FizzBuzz");
+			printf(" %s", "FizzBuzz");
 		}
 		else if (x % 3 == 0)
 		{
-			printf("%s ", "Fizz");
+			printf(" %s", "Fizz");
 		}
 		else if (x % 5 == 0)
 		{
-			printf("%s ", "Buzz");
+			printf(" %s", "Buzz");
+		}
+		else if (x == 1)
+		{
+			printf("%d", x);
 		}
 		else
 		{
-			printf("%d ", x);
+			printf(" %d", x);
 		}
 	}
 	putchar('\n');
