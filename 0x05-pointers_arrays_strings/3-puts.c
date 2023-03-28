@@ -32,7 +32,7 @@ void _puts(char *str)
 	int index = 0;
 	int len_s;
 
-	len_s = _strlen(str) - 1;
+	len_s = _strlen(str);
 
 
 	while (index < len_s)
