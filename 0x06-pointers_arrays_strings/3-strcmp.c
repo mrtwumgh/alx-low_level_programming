@@ -29,11 +29,11 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (str_len1 > str_len2)
 		{
-			status = 15;
+			status = 1;
 		}
 		else
 		{
-			status = -15;
+			status = -1;
 		}
 	}
 	else
@@ -42,7 +42,7 @@ int _strcmp(char *s1, char *s2)
 		{
 			if (s1[i] != s2[i])
 			{
-				status = 15;
+				status = 1;
 			}
 		}
 	}
