@@ -10,40 +10,39 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int str_len1 = 0;
-	int str_len2 = 0;
+	int i = 0;
 	int status = 0;
-	int i;
 
-	while (s1[str_len1] != '\0')
+	while (s1[i] != '\0' && s2[i] != '\0')
 	{
-		str_len1++;
-	}
-
-	while (s2[str_len2] != '\0')
-	{
-		str_len2++;
-	}
-
-	if (str_len1 != str_len2)
-	{
-		if (str_len1 > str_len2)
+		if (s1[i] != s2[i])
 		{
-			status = 1;
-		}
-		else
-		{
-			status = -1;
-		}
-	}
-	else
-	{
-		for (i = 0; i < str_len1; i++)
-		{
-			if (s1[i] != s2[i])
+			if (s1[i] < s2[i])
+			{
+				status = -1;
+			}
+			else
 			{
 				status = 1;
 			}
+		}
+		i++;
+	}
+
+	if (s1[i] == '\0' && s2[i] == '\0')
+	{
+		status = 0;
+	}
+	else
+	{
+
+		if (s1[i] == '\0')
+		{
+			status = -1;
+		}
+		else
+		{
+			status = 1;
 		}
 	}
 
