@@ -10,36 +10,14 @@
 
 void reverse_array(int *a, int n)
 {
-	int i = n - 1;
+	int temp = 0;
+	int i;
+	int j;
 
-	while (i >= 0)
+	for (i = 0, j = n - 1; i < j; i++, j--)
 	{
-		if (a[i] != 0)
-		{
-			if (a[i] >= 1000)
-			{
-				_putchar((a[i] / 1000) + '0');
-				_putchar(((a[i] / 100) % 10) + '0');
-				_putchar(((a[i] / 10) % 10) + '0');
-			}
-			else if (a[i] >= 100)
-			{
-				_putchar((a[i] / 100) + '0');
-				_putchar(((a[i] / 10) % 10) + '0');
-			}
-			else if (a[i] >= 10)
-			{
-				_putchar((a[i] / 10) + '0');
-			}
-			_putchar((a[i] % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
-		}
-		else
-		{
-			_putchar(a[i] + '0');
-		}
-		i--;
+		temp = a[i];
+		a[i] = a[j];
+		a[j] = temp;
 	}
-	_putchar('\n');
 }
