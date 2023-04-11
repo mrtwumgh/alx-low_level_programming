@@ -34,11 +34,6 @@ char *str_concat(char *s1, char *s2)
 	char *s;
 	int i;
 
-	if (s1 == NULL || s2 == NULL)
-	{
-		return (NULL);
-	}
-
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 
