@@ -56,7 +56,7 @@ char *argstostr(int ac, char **av)
 {
 	char *st;
 	int i;
-	int total_len;
+	int total_len = 0;
 
 	if (ac == 0 || av == NULL)
 	{
@@ -68,7 +68,7 @@ char *argstostr(int ac, char **av)
 		total_len += _strlen(av[i]);
 	}
 
-	st = (char *)malloc(sizeof(*st) * (total_len));
+	st = (char *)malloc(sizeof(*st) * (total_len + 1));
 
 	if (st == NULL)
 	{
