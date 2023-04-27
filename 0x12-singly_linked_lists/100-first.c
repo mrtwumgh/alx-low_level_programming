@@ -1,10 +1,10 @@
-#include <stdio.h>
-/**
- * myCleanupFun - prints before the main function is executed.
- *
- * Return: Void
- */
+#include "lists.h"
 
+/**
+  * myCleanupFun - prints before the main function is executed.
+  *
+  * Return: Void
+  */
 void myCleanupFun(void) __attribute__ ((constructor));
 
 void myCleanupFun(void)
