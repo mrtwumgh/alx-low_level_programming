@@ -4,7 +4,7 @@
   * listint_t *find_listint_loop - finds the loop in a list
   * @head: head node
   *
-  * Returns: the address of where the loop starts
+  * Return: the address of where the loop starts
   */
 
 listint_t *find_listint_loop(listint_t *head)
