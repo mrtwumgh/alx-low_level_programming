@@ -33,7 +33,7 @@ void print_error(int file_from, int file_to, char *argv[])
 
 int main(int argc, char *argv[])
 {
-	int file_from, file_to;
+	int file_from, file_to, err_close;
 	ssize_t bytes_read, bytes_written;
 	char buffer[BUFFER_SIZE];
 
@@ -59,13 +59,14 @@ int main(int argc, char *argv[])
 			print_error(0, -1, argv);
 		}
 	}
-	if (close(file_from) == -1)
+	err_close = close(file_from);
+	if (err_close == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
 		exit(100);
 	}
-
-	if (close(file_to) == -1)
+	err_close = close(file_to);
+	if (err_close == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
 		exit(100);
