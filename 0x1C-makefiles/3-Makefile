@@ -9,9 +9,6 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-$(OBJ): $(SRC)
-	$(CC) -c $(SRC)
-
 clean:
 	$(RM) *~ $(NAME)
 
